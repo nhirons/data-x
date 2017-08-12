@@ -1,0 +1,215 @@
+<!doctype html>
+<html><!-- #BeginTemplate "../Templates/Advanced.dwt" --><!-- DW6 -->
+<head>
+<!-- #BeginEditable "doctitle" -->
+<title>How to Multiply Matrices</title>
+<meta name="Description" content="Math explained in easy language, plus puzzles, games, quizzes, worksheets and a forum. For K-12 kids, teachers and parents." />
+<!-- #EndEditable -->
+<meta name="keywords" content="math, maths, mathematics, school, homework, education" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="pics-label" content='(PICS-1.1 "http://www.classify.org/safesurf/" L gen true for "http://www.mathsisfun.com" r (SS~~000 1))' />
+<link rel="stylesheet" type="text/css" href="../style2.css" />
+<script src="../main.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="centerfull">
+<div id="adv">
+	<div id="midfull">
+		<div id="header" role="banner">
+
+			<div id="searchBox" role="search">
+				<form action="../sphider/search.php" method="get">
+					<input type="text" name="query" value="" id="searchFld" />
+					<input type="submit" value="Search" name="submit" id="searchBtn" />
+					<input type="hidden" name="search" value="1" />
+				</form>
+			</div>
+
+			<div id="linkto">
+				<script type="text/javascript">getAdRight2();</script>
+			</div>
+
+		</div>
+		<div id="menu" class="centerfull" role="navigation">
+			<script type="text/javascript">getMenuTop();</script>
+		</div>
+			<div id="adhid2">
+				<div id="showads1"><a href="javascript:showads()">Show Ads</a></div>
+				<div id="hideads1"><a href="javascript:hideads()">Hide Ads</a><br /><a href="../about-ads.html">About Ads</a></div>
+			</div>
+
+		<div id="topads" class="centerfull noprint"> 
+			<script type="text/javascript">getAdTop();</script>
+		</div>
+
+		<div id="content" role="main"> <!-- #BeginEditable "Body" -->
+  
+	<h1 align="center">How to Multiply Matrices</h1>
+	<p>A Matrix is an array of numbers:</p>
+	<p align="center"><img src="images/matrix-example.svg" alt="2x3 Matrix" /> <br />
+        <span class="large">A Matrix</span><br />
+	  (This one has 2 Rows and 3 Columns)</p>
+	<p>To multiply a matrix by a single number is easy:</p>
+	<p align="center" src="images/matrix-addition.gif"><img src="images/matrix-multiply-constant.gif" alt="Matrix Multiply Constant" width="304" height="116" /></p>
+	<div class="simple">
+      <div align="center">These are the calculations: </div>
+	  <table align="center">
+        <tr align="center">
+          <td>2&times;4=8</td>
+          <td>2&times;0=0</td>
+        </tr>
+        <tr align="center">
+          <td>2&times;1=2</td>
+          <td>2&times;-9=-18</td>
+        </tr>
+      </table>
+	  </div>
+	<p>We call the number  (&quot;2&quot; in this case) a <b>scalar</b>, so this is called <span class="large">&quot;scalar multiplication&quot;</span>. </p>
+	<h2>Multiplying a Matrix by Another Matrix</h2>
+	<p>But to multiply a matrix <b>by another matrix</b> we need to do the &quot;<a href="vectors-dot-product.html">dot product</a>&quot; of  rows and columns ... what does that mean? Let us see with an example:</p>
+	<p>To work out the answer for the <b>1st row</b> and <b>1st column</b>:</p>
+	<p align="center"><img src="images/matrix-multiply-a.svg" alt="Matrix Multiply Dot Product"  /></p>
+	<div class="def">
+	  <p>The &quot;Dot Product&quot; is where we <b>multiply matching members</b>, then sum up:</p>
+	  <p align="center" class="larger">(1, 2, 3) &bull; (7, 9, 11) = 1&times;7 + 2&times;9 + 3&times;11  = 58</p>
+      <p>We match the 1st members (1 and 7), multiply them, likewise for the 2nd members (2 and 9) and the 3rd members (3 and 11), and finally sum them up.</p>
+	  </div>
+	<p>Want to see another example? Here it is for the 1st row and <b>2nd column</b>:</p>
+	<p align="center"><img src="images/matrix-multiply-b.svg" alt="Matrix Multiply next entry" /></p>
+	<p align="center" class="larger">(1, 2, 3) &bull; (8, 10, 12) = 1&times;8 + 2&times;10 + 3&times;12  = 64</p>
+    <p>We can do the same thing for the <b>2nd row</b> and <b>1st column</b>:</p>
+	<p align="center" class="larger">(4, 5, 6) &bull; (7, 9, 11) = 4&times;7 + 5&times;9 + 6&times;11  = 139</p>
+	<p>And for the <b>2nd row</b> and <b>2nd column</b>:</p>
+	<p align="center" class="larger">(4, 5, 6) &bull; (8, 10, 12) = 4&times;8 + 5&times;10 + 6&times;12  = 154</p>
+	<p>And we get:</p>
+	<p align="center"><img src="images/matrix-multiply-c.svg" alt="Matrix Multiply Finished" /></p>
+	<p align="center" class="larger">DONE!</p>
+	<h2>Why Do It This Way?</h2>
+	<p>This may seem an odd and complicated way of multiplying, but it is necessary!</p>
+	<p>I can give you a  real-life example to illustrate why we multiply matrices in this way.</p>
+	<div class="example">
+	  <h3>Example: The local shop sells 3 types of pies.</h3>
+	  <ul>
+	    <li>Beef pies cost <b>$3</b> each</li>
+	      <li>Chicken pies cost <b>$4</b> each</li>
+	      <li>Vegetable pies cost <b>$2</b> each</li>
+	      </ul>
+	  <p>And this is how many they sold in 4 days:</p>
+	  <p align="center"><img src="images/matrix-multiply-ex1a.svg" alt="Matrix Multiply Table" /></p>
+	  <p>Now think about this ... the <b>value of sales</b> for Monday is  calculated this way:</p>
+	  <div class="so">	  Beef pie value + Chicken pie value + Vegetable pie value	  </div>
+	  <div class="so">	  $3&times;13 + $4&times;8 + $2&times;6  = $83</div>
+	  <p>So it is, in fact, the &quot;dot product&quot; of prices and how many were sold:</p>
+	  <p align="center"><span class="larger">($3, $4, $2) &bull; (13, 8, 6) = $3&times;13 + $4&times;8 + $2&times;6  = $83</span></p>
+	  <p>We <b>match</b> the price to how many sold, <b>multiply</b> each, then <b>sum</b> the result.</p>
+	  <p>&nbsp;</p>
+	  <p>In other words:</p>
+		<ul>
+			<li>The sales for Monday were: Beef pies: <b>$3&times;13=$39</b>, Chicken pies: <b>$4&times;8=$32</b>, and Vegetable pies: <b>$2&times;6=$12</b>. Together that is $39 + $32 + $12 = <b>$83</b></li>
+			<li>And for  Tueday: <b>$3&times;9 + </b> <b>$4&times;7 + $2</b><b>&times;4 = </b><b>$63</b></li>
+			<li>And for  Wednesday: <b>$3&times;7 + </b> <b>$4&times;4 + $2</b><b>&times;0 = </b><b>$37</b></li>
+			<li>And for  Thursday: <b>$3&times;15 + </b> <b>$4&times;6 + $2</b><b>&times;3 = </b><b>$75</b></li>
+			</ul>
+		<p>So it is important to match each price to each quantity.</p>
+		<p>&nbsp;</p>
+<p align="center" class="larger">Now you know why we use the &quot;dot product&quot;. </p>
+<p align="center" class="larger">&nbsp;</p>
+	  <p>And here is the full result in Matrix form:</p>
+	  <p><img src="images/matrix-multiply-ex1b.gif" alt="Matrix Multiply" width="600" height="148" /></p>
+	  <p>They sold <b>$83</b> worth of pies on Monday, <b>$63</b> on Tuesday, etc.</p>
+	  <p>(You can put those values into the <a href="matrix-calculator.html">Matrix Calculator</a> to see if they work.)</p>
+	</div>
+	<h2>Rows and Columns</h2>
+    <p>To show how many rows and columns a matrix has we often write <span class="number"><b>rows&times;columns</b></span>. </p>
+    <div class="example">
+      <p>Example: This matrix is <span class="number"><b>2&times;3</b></span> (2 rows by 3 columns):</p>
+      <p align="center"><img src="images/matrix-example.svg" alt="2x3 Matrix"  /></p>
+    </div>
+    <p>When we do multiplication:</p>
+    <div class="bigul">
+      <ul>
+        <li>The number of <b>columns of the 1st matrix</b> must equal the number of <b>rows of the 2nd matrix</b>.</li>
+          <li>And the result will have the same number of <b>rows as the 1st matrix</b>, and the same number of <b>columns as the 2nd matrix</b>.</li>
+      </ul>
+    </div>
+    <div class="example">
+      <h3>Example:</h3>
+      <p><img src="images/matrix-multiply-ex1b.gif" alt="Matrix Multiply" width="600" height="148" /></p>
+      <p>In that example we multiplied a <span class="number">1&times;3</span> matrix by a  <span class="number">3&times;4</span>  matrix (note the 3s are the same), and the result was a <span class="number">1&times;4</span> matrix.</p>
+    </div>
+    <div class="center80">
+	  <p align="center"><i>In General: </i></p>
+	  <p align="center">To multiply an <span class="number"><b>m&times;n</b></span> matrix by  an <span class="number"><b>n&times;p</b></span> matrix, the  <span class="number"><b>n</b></span>s must be the same, <br />
+	    and the result is   an <span class="number"><b>m&times;p</b></span> matrix.</p>
+	  <p align="center"><img src="images/matrix-multiply-rows-cols.gif" width="261" height="24"  alt="matrix multiply rows cols" /></p>
+		</div>
+	<h2>Identity Matrix</h2>
+    <p>The &quot;Identity Matrix&quot; is the matrix equivalent of the number &quot;1&quot;:</p>
+    <p align="center"><img src="images/matrix-identity.gif" alt="Identity Matrix" width="186" height="95" /><br />
+      <span class="large">A 3&times;3 Identity Matrix</span><br />
+    </p>
+    <ul>
+      <li>It is &quot;square&quot; (has same number of rows as columns)</li>
+      <li>It can be large or small (2&times;2, 100&times;100, ... whatever)</li>
+      <li>It has <b>1</b>s on the diagonal and <b>0</b>s everywhere else</li>
+      <li>Its symbol is the capital letter <b>I</b><br />
+      	</li>
+    </ul>
+    <p>It is a <b>special matrix</b>, because when we multiply by it,  the original is unchanged:</p>
+    <p align="center"><span class="largest">A &times; I = A<br />
+    </span></p>
+    <p align="center"><span class="largest">I &times; A = A<br />
+    </span></p>
+    <h2>Order of Multiplication</h2>
+		<p>In arithmetic we are used to:</p>
+		<p align="center"><span class="largest">3 &times; 5 = 5 &times; 3<br />
+		</span>(The <a href="../associative-commutative-distributive.html">Commutative Law</a> of Multiplication)</p>
+		<p>But this is <b>not</b> generally true for matrices (matrix multiplication is <b>not commutative</b>):</p>
+		<p align="center" class="largest">AB &ne; BA</p>
+		<p>When we change the order of multiplication, the answer is (usually) <b>different</b>.</p>
+		<div class="example">
+			<h3>Example: </h3>
+			<p>See how changing the order affects this multiplication:</p>
+			<p align="center"><img src="images/matrix-multiply-order.gif" alt="Matrix Multiply Order" width="383" height="157" /></p>
+			<p align="center">The  answers are different!</p>
+		</div>
+		<p>It <b>can</b> have the same result (such as when one matrix is the Identity Matrix) but not usually. </p>
+		<p>&nbsp;</p>
+<div class="questions"> 
+
+<script type="text/javascript">getQ(714, 715, 716, 717, 2394, 2395, 2397, 2396, 8473, 8474, 8475, 8476);</script>&nbsp;
+
+</div>
+
+    <div class="related">
+    <a href="matrix-introduction.html">Matrices</a> 
+    <a href="matrix-determinant.html">Determinant of a Matrix</a> 
+    <a href="matrix-calculator.html">Matrix Calculator</a>
+    <a href="index.html">Algebra Index</a>    </div>
+<!-- #EndEditable --> 
+		<div id="adend" class="centerfull noprint"> 
+			<script type="text/javascript">getAdEnd();</script>
+		</div>
+		</div>
+		<div id="footer" class="centerfull noprint">
+			<div class="footFriend"><a href="javascript:tellAFriend();"></a></div>
+			<div class="footFave"><a href="javascript:addFavorites();"></a></div>
+			<div class="footLink"><a href="javascript:linkToUs();"></a></div>
+		</div>
+		<div id="foot-menu" class="centerfull"><a href="../sphider/search.php">Search</a> :: <a href="../links/index.html">Index</a> :: <a href="../aboutmathsisfun.html">About</a> :: <a href="../contact.php">Contact</a> :: <a href="javascript:Contribute()">Contribute</a> :: <a href="javascript:Citation()">Cite This Page</a> :: <a href="../Privacy.htm">Privacy</a> <br />
+			<br />
+			<span class="tiny">Copyright &copy; 2014 MathsIsFun.com</span> <br />
+		</div>
+	</div>
+</div>
+</div>
+<div class="left column zneg">
+	<div id="leftcol"></div>
+</div>
+<div class="right column zneg">
+	<div id="rightcol"></div>
+</div>
+<script type="text/javascript">getBodyEnd();</script>
+</body>
+<!-- #EndTemplate --></html>
